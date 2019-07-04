@@ -1,0 +1,266 @@
+{
+  "participants": [
+    {
+      "name": "Martin Claesson"
+    },
+    {
+      "name": "Joel Stenberg"
+    },
+    {
+      "name": "Karl Fredrik Gudjonsson"
+    },
+    {
+      "name": "Filip Asp"
+    },
+    {
+      "name": "Benny Lam"
+    },
+    {
+      "name": "Jakob Nilsson"
+    },
+    {
+      "name": "Oskar Karlsson"
+    },
+    {
+      "name": "Marcus Odlander"
+    },
+    {
+      "name": "Marcus Arnemo"
+    },
+    {
+      "name": "Andreas Alvarsson"
+    },
+    {
+      "name": "Jens Andersson"
+    },
+    {
+      "name": "Christoffer Johansson"
+    },
+    {
+      "name": "Ola Jigin"
+    },
+    {
+      "name": "Robert Petersson Lantz"
+    },
+    {
+      "name": "Tim Lestander"
+    },
+    {
+      "name": "Tobias Krispinsson"
+    },
+    {
+      "name": "Jakob Danielsson"
+    },
+    {
+      "name": "Kalle Andersson"
+    },
+    {
+      "name": "John Bengtson"
+    },
+    {
+      "name": "David Andersson"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984421421,
+      "content": "S\u00c3\u00a5 f\u00c3\u00a5r du all facebookdata inklusive chattar tror jag",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984409507,
+      "content": "Inst\u00c3\u00a4llningar -> download copy",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Jakob Nilsson",
+      "timestamp_ms": 1561984352002,
+      "content": "Hur f\u00c3\u00a5r man ner feteloggen ens?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984336248,
+      "content": "m\u00c3\u00a5nga kommer nog vara lite out of context s\u00c3\u00a5 man f\u00c3\u00a5r ju tal ite runt",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984333080,
+      "content": "Mycket guld fr\u00c3\u00a5n back in the days vi missar antar jag, men n\u00c3\u00b6je finns",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984324094,
+      "content": "Inte j\u00c3\u00a4ttel\u00c3\u00a4nge men tillr\u00c3\u00a4ckligt f\u00c3\u00b6r att vi ska ha kul \u00c3\u00a5t det",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984313734,
+      "content": "Hur l\u00c3\u00a4nge har reactions funnits dock?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984305017,
+      "content": "Det \u00c3\u00a4r ju applicerbart f\u00c3\u00b6r flera chattar",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984303962,
+      "content": "I like that one",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984293297,
+      "content": "this",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984288466,
+      "content": "men seriously though",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984250107,
+      "content": "MR ELLIOT R\u00c3\u0096VSM\u00c3\u0096RSKFUCKER",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984237445,
+      "content": "eller en som kombinerar de b\u00c3\u00a5da",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Jakob Nilsson",
+      "timestamp_ms": 1561984226305,
+      "content": "Samt en porrnamnsgenerator",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984224622,
+      "content": "L\u00c3\u00b6ne\u00c3\u00b6kning dirr f\u00c3\u00b6r kreativitet",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Marcus Odlander",
+      "timestamp_ms": 1561984221682,
+      "content": "FLENSFADERSHOOOORAAAA",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Tim Lestander",
+      "timestamp_ms": 1561984207037,
+      "content": "Jag g\u00c3\u00b6r en generator som kan skapa svordomar, t.ex. R\u00c3\u0096VSM\u00c3\u0096\u00c3\u0096\u00c3\u0096\u00c3\u0096RSLUUUDER",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Jakob Nilsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Marcus Odlander"
+        }
+      ],
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Ola Jigin",
+      "timestamp_ms": 1532600396700,
+      "content": "Moade.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Jakob Danielsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Claesson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Joel Stenberg"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Karl Fredrik Gudjonsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Benny Lam"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Jakob Nilsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Marcus Odlander"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Marcus Arnemo"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Christoffer Johansson"
+        }
+      ],
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Andreas Alvarsson",
+      "timestamp_ms": 1512921566251,
+      "content": "Vaaad jag asvkyr honon. Typ det enda jag  skrivit i chatten det senaste halv\u00c3\u00a5ret.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Jakob Danielsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Martin Claesson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Joel Stenberg"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Karl Fredrik Gudjonsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Jakob Nilsson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Marcus Odlander"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Marcus Arnemo"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Christoffer Johansson"
+        },
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Ola Jigin"
+        }
+      ],
+      "type": "Generic"
+    }
+  ]
+}
