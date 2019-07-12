@@ -38,18 +38,18 @@ function compressArray(original) {
 
 class ChatBubble extends React.PureComponent {
   constructor(props) {
-    var date = moment.unix(props.timestamp * 1000).format('YYYY-MM-DD HH:mm')
+    var date = moment(props.timestamp).format('YYYY-MM-DD HH:mm')
     super(props)
-    this.state = { showContext: false, date }
+    this.state = { showContext: false, date, reactions: props.reactions }
   }
 
   onClick = () => {
-    this.props.setContextToShow(this.props.timestamp)
+    this.props.setContextToShow(this.props.timestamp, this.props.index)
     this.setState({ showContext: !this.state.showContext })
   }
   render() {
     const props = this.props
-    const compressedArray = compressArray(props.reactions)
+    const compressedArray = compressArray(this.state.reactions)
     return (
       <div className="row">
         <div className="bubble-container">
@@ -57,18 +57,18 @@ class ChatBubble extends React.PureComponent {
             <div className="talktext">{props.message}</div>
             {props.image && <img src={`../photos/${props.image.uri.substring(props.image.uri.lastIndexOf('/') + 1)}`} />}
             <div className="writer">{props.writer}</div>
-            <div>{}</div>
+            <div className="date">{moment(props.timestamp).format('YYYY-MM-DD HH:mm')}</div>
           </div>
-          <div className="emojis">
-            {compressedArray.map((reaction, index) => (
-              <div key={index}>{`${reaction.value.reaction}(${reaction.count})`}</div>
-            ))}
+          <div className="emojis margin-bottom">
+            {compressedArray.map((reaction, index) => {
+              return <div key={index}>{`${reaction.value.reaction}(${reaction.count})`}</div>
+            })}
           </div>
         </div>
-        <Context
+        {/* <Context
           className={this.state.showContext && props.contextToShow === props.timestamp ? 'fadeIn' : 'fadeOut'}
           context={props.context}
-        />
+        /> */}
       </div>
     )
   }

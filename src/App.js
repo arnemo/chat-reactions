@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './style/main.less'
-import messages from '../message_1'
+import messages from '../smallmessage_1'
 import ChatBubble from './ChatBubble'
+import Context from './Context'
+import Highscore from './Highscore'
+import HighscoreTwo from './HighscoreTwo'
 
 class App extends React.Component {
   constructor() {
@@ -12,6 +15,7 @@ class App extends React.Component {
       messages: '',
       unfilteredMessages: messages.messages,
       loading: true,
+      //contentIndex: 0,
     }
   }
 
@@ -32,9 +36,13 @@ class App extends React.Component {
     return Buffer.from(strArr).toString('utf8')
   }
 
-  setContextToShow = key => {
+  setContextToShow = (key, contentIndex) => {
     console.log('setContextToShow' + typeof key)
-    this.setState({ contextToShow: key }, () => console.log('Now is the state set'))
+    if (contentIndex === this.state.contentIndex) {
+      this.setState({ contentIndex: null })
+    } else {
+      this.setState({ contextToShow: key, contentIndex })
+    }
   }
 
   processMessages = messageArray => {
@@ -92,23 +100,44 @@ class App extends React.Component {
         </div>
         <div className="container">
           <h1>Flest reaktioner</h1>
-          {!this.state.loading &&
-            this.state.messagesWithMostReactionsSorted.map(message => {
-              const context = this.state.unfilteredMessages.slice(message.index, message.index + 8)
-              return (
-                <ChatBubble
-                  key={message.timestamp_ms}
-                  timestamp={message.timestamp_ms}
-                  reactions={message.reactions}
-                  message={message.content}
-                  writer={message.sender_name}
-                  image={(message.photos && message.photos[0]) || (message.gifs && message.gifs[0])}
-                  context={context}
-                  contextToShow={this.state.contextToShow}
-                  setContextToShow={this.setContextToShow}
-                />
-              )
-            })}
+          <div className="row">
+            <div>
+              {!this.state.loading &&
+                this.state.messagesWithMostReactionsSorted.map(message => {
+                  return (
+                    <ChatBubble
+                      key={message.timestamp_ms}
+                      timestamp={message.timestamp_ms}
+                      reactions={message.reactions}
+                      message={message.content}
+                      writer={message.sender_name}
+                      image={(message.photos && message.photos[0]) || (message.gifs && message.gifs[0])}
+                      //context={context}
+                      contextToShow={this.state.contextToShow}
+                      setContextToShow={this.setContextToShow}
+                      index={message.index}
+                    />
+                  )
+                })}
+            </div>
+            <div className={`${this.state.contentIndex ? 'fadeIn' : 'fadeOut'} sticky`}>
+              <h1>Context</h1>
+              <Context
+                context={
+                  this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex, this.state.contentIndex + 8) : []
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          {this.state.messages && (
+            <Highscore
+              messages={this.state.messages}
+              unfilteredMessages={this.state.unfilteredMessages}
+              setContextToShow={this.setContextToShow}
+            />
+          )}
         </div>
       </div>
     )
@@ -116,5 +145,3 @@ class App extends React.Component {
 }
 
 export default App
-
-//ReactDOM.render(<Welcome />, document.getElementById('root'))

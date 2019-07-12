@@ -2,6 +2,7 @@ import React from 'react'
 import './style/main.less'
 import { throws } from 'assert'
 import Context from './Context'
+import moment from 'moment'
 
 function compressArray(original) {
   var compressed = []
@@ -53,6 +54,7 @@ class ContextChatBubble extends React.PureComponent {
             <div className="talktext">{props.message}</div>
             {props.image && <img src={`../photos/${props.image.uri.substring(props.image.uri.lastIndexOf('/') + 1)}`} />}
             <div className="writer">{props.writer}</div>
+            <div className="date">{moment(props.timestamp).format('YYYY-MM-DD HH:mm')}</div>
           </div>
           <div className="emojis">
             {compressedArray.map((reaction, index) => (

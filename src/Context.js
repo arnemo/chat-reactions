@@ -8,16 +8,20 @@ class Context extends React.PureComponent {
   }
   render() {
     return (
-      <div className={this.props.className}>
+      <div>
         {this.props.context
           .map(message => (
-            <ContextChatBubble
-              key={message.timestamp_ms}
-              reactions={message.reactions || []}
-              message={message.content}
-              writer={message.sender_name}
-              image={message.photos && message.photos[0]}
-            />
+            <div className="margin-bottom">
+              <ContextChatBubble
+                className="margin-bottom"
+                key={message.timestamp_ms}
+                timestamp={message.timestamp_ms}
+                reactions={message.reactions || []}
+                message={message.content}
+                writer={message.sender_name}
+                image={message.photos && message.photos[0]}
+              />
+            </div>
           ))
           .reverse()}
       </div>

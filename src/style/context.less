@@ -1,5 +1,16 @@
 @import 'chatBubble.less';
 
 .context {
-  margin-left: @talk-bubble-width + 40;
+  margin-left: @talk-bubble-width;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+  margin-top: -5rem;
+  min-height: 95vh;
+  min-width: @talk-bubble-width;
+  overflow-y: scroll;
+  //top: 0;
+  //bottom: 0;
 }
