@@ -5,7 +5,6 @@ import messages from '../smallmessage_1'
 import ChatBubble from './ChatBubble'
 import Context from './Context'
 import Highscore from './Highscore'
-import HighscoreTwo from './HighscoreTwo'
 
 class App extends React.Component {
   constructor() {
