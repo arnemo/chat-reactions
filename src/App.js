@@ -36,7 +36,7 @@ class App extends React.Component {
   }
 
   setContextToShow = (key, contentIndex) => {
-    console.log('setContextToShow' + typeof key)
+    console.log('setContextToShow ' + typeof key)
     if (contentIndex === this.state.contentIndex) {
       this.setState({ contentIndex: null })
     } else {
@@ -123,7 +123,7 @@ class App extends React.Component {
               <h1>Context</h1>
               <Context
                 context={
-                  this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex, this.state.contentIndex + 8) : []
+                  this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex -4 , this.state.contentIndex) : []
                 }
               />
             </div>

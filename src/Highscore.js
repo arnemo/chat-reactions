@@ -56,7 +56,8 @@ class Highscore extends React.PureComponent {
   }
 
   setContextToShow = (key, contentIndex) => {
-    console.log('setContextToShow' + typeof key)
+    console.log('setContextToShow ' + typeof key)
+    // console.log('contentIndex '+contentIndex);
     if (contentIndex === this.state.contentIndex) {
       this.setState({ contentIndex: null }, () => console.log('Now is the state set'))
     } else {
@@ -117,7 +118,7 @@ class Highscore extends React.PureComponent {
             <Context
               //className={`${this.state.contentIndex ? 'fadeIn' : 'fadeOut'} sticky`}
               context={
-                this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex, this.state.contentIndex + 8) : []
+                this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex- 4, this.state.contentIndex ) : []
               }
             />
           </div>

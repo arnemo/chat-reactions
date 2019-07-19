@@ -58,6 +58,7 @@ class ChatBubble extends React.PureComponent {
             {props.image && <img src={`../photos/${props.image.uri.substring(props.image.uri.lastIndexOf('/') + 1)}`} />}
             <div className="writer">{props.writer}</div>
             <div className="date">{moment(props.timestamp).format('YYYY-MM-DD HH:mm')}</div>
+            {/* <div> {props.index}</div> */}
           </div>
           <div className="emojis margin-bottom">
             {compressedArray.map((reaction, index) => {

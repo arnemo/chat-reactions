@@ -7,6 +7,7 @@ class Context extends React.PureComponent {
     super(props)
   }
   render() {
+    console.log('context' + JSON.stringify(this.props.context));
     return (
       <div>
         {this.props.context
