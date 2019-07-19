@@ -1,7 +1,8 @@
-import React from 'react'
-import './style/main.less'
-import ChatBubble from './ChatBubble'
-import Context from './Context'
+import React from 'react';
+import './style/main.less';
+import ChatBubble from './ChatBubble';
+import Context from './Context';
+
 
 class Highscore extends React.PureComponent {
   constructor(props) {
