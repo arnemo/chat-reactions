@@ -11,6 +11,7 @@ class Context extends React.PureComponent {
     return (
       <div>
         {this.props.context
+          .reverse()
           .map(message => (
             <div className="margin-bottom">
               <ContextChatBubble

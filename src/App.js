@@ -123,7 +123,7 @@ class App extends React.Component {
               <h1>Context</h1>
               <Context
                 context={
-                  this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex -4 , this.state.contentIndex) : []
+                  this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex -4 , this.state.contentIndex+1) : []
                 }
               />
             </div>

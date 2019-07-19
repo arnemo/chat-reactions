@@ -118,7 +118,7 @@ class Highscore extends React.PureComponent {
             <Context
               //className={`${this.state.contentIndex ? 'fadeIn' : 'fadeOut'} sticky`}
               context={
-                this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex- 4, this.state.contentIndex ) : []
+                this.state.contentIndex ? this.state.unfilteredMessages.slice(this.state.contentIndex- 4, this.state.contentIndex+1 ) : []
               }
             />
           </div>
